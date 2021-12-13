@@ -1,0 +1,12 @@
+<p>drugs works!</p>
+<table calss="table">
+    <tr *ngFor="let drug of AllDrugs | async">
+            <td class="tbl2">{{drug.medcineName}}</td>
+        </tr>
+
+</table>
+<mat-grid-list>
+    <mat-grid-tile *ngFor="let drug of AllDrugs | async">
+        {{drug.medcineName}}
+        </mat-grid-tile>
+</mat-grid-list>
